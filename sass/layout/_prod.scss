@@ -206,16 +206,16 @@
    }
 }
 .prod-card__text {
-   margin-bottom: 30px;
+   margin-bottom: 28px;
    @include font(14px, 1.5, 0.04em, 700);
    text-align: center;
    color: var(--white-color);
    @media screen and (min-width: 768px) {
       margin-bottom: 40px;
-      @include font(14px, 1.77, 0.04em, 700);
+      @include font(14px, 1.78, 0.04em, 700);
    }
    @media screen and (min-width: 1280px) {
-      margin-bottom: 62px;
+      margin-bottom: 56px;
       @include font(16px, 1.75, 0.04em, 700);
    }
 }

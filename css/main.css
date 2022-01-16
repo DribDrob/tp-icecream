@@ -439,7 +439,7 @@ img {
 }
 
 .prod-card__text {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -452,7 +452,7 @@ img {
   .prod-card__text {
     margin-bottom: 40px;
     font-size: 14px;
-    line-height: 1.77;
+    line-height: 1.78;
     letter-spacing: 0.04em;
     font-weight: 700;
   }
@@ -460,7 +460,7 @@ img {
 
 @media screen and (min-width: 1280px) {
   .prod-card__text {
-    margin-bottom: 62px;
+    margin-bottom: 56px;
     font-size: 16px;
     line-height: 1.75;
     letter-spacing: 0.04em;
