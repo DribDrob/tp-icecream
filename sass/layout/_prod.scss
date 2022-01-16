@@ -4,10 +4,16 @@
    @media screen and (min-width: 768px) {
       padding-bottom: 112px;
    }
+   @media screen and (min-width: 1280px) {
+      padding-top: 127px;
+      padding-bottom: 119px;
+   }
    .container {
       @media screen and (min-width: 768px) {
-         padding-left: 34px;
-         padding-right: 34px;
+         padding: 0px 34px;
+      }
+      @media screen and (min-width: 1280px) {
+         padding: 0px 116px;
       }
    }
 }
@@ -21,6 +27,9 @@
    @media screen and (min-width: 768px) {
       margin-bottom: 150px;
    }
+   @media screen and (min-width: 1280px) {
+      margin-bottom: 259px;
+   }
 }
 .prod-list {
    margin-bottom: -130px;
@@ -28,6 +37,9 @@
       display: flex;
       flex-wrap: wrap;
       margin-left: -20px;
+   }
+   @media screen and (min-width: 768px) {
+      margin-left: -30px;
    }
 }
 .prod-list__item {
@@ -39,6 +51,12 @@
       margin-left: 20px;
       flex-basis: calc(100% / 3 - 20px);
       padding: 152px 11px 40px;
+   }
+   @media screen and (min-width: 1280px) {
+      min-width: 329px;
+      margin-left: 30px;
+      flex-basis: calc(100% / 3 - 30px);
+      padding: 163px 44px 50px;
    }
 }
 .prod-card {
@@ -66,6 +84,16 @@
                background-image: url(../images/prod-tab-icecream-2x.png);
             }
          }
+         @media screen and (min-width: 1280px) {
+            background-image: url(../images/prod-desk-icecream-1x.png);
+
+            @media (min-device-pixel-ratio: 2),
+               (-webkit-min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/prod-desk-icecream-2x.png);
+            }
+         }
       }
    }
    &:nth-child(2) {
@@ -85,6 +113,15 @@
                (min-resolution: 192dpi),
                (min-resolution: 2dppx) {
                background-image: url(../images/prod-tab-icecoffee-2x.png);
+            }
+         }
+         @media screen and (min-width: 1280px) {
+            background-image: url(../images/prod-desk-icecoffee-1x.png);
+            @media (min-device-pixel-ratio: 2),
+               (-webkit-min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/prod-desk-icecoffee-2x.png);
             }
          }
       }
@@ -108,6 +145,15 @@
                background-image: url(../images/prod-tab-milkshakes-2x.png);
             }
          }
+         @media screen and (min-width: 1280px) {
+            background-image: url(../images/prod-desk-milkshakes-1x.png);
+            @media (min-device-pixel-ratio: 2),
+               (-webkit-min-device-pixel-ratio: 2),
+               (min-resolution: 192dpi),
+               (min-resolution: 2dppx) {
+               background-image: url(../images/prod-desk-milkshakes-2x.png);
+            }
+         }
       }
    }
 }
@@ -118,6 +164,10 @@
    text-align: center;
    text-transform: uppercase;
    color: var(--white-color);
+   @media screen and (min-width: 1280px) {
+      margin-bottom: 70px;
+      @include font(30px, 1.13, 0.04em, 400);
+   }
    &::before {
       position: absolute;
       content: '';
@@ -131,6 +181,11 @@
       background-position: center;
       @media screen and (min-width: 768px) {
          height: 226px;
+         top: -104px;
+      }
+      @media screen and (min-width: 1280px) {
+         height: 335px;
+         top: -210px;
       }
    }
    &::after {
@@ -142,6 +197,12 @@
       width: 26px;
       height: 6px;
       background-image: url('../images/prod-dots.svg');
+      @media screen and (min-width: 768px) {
+         top: 205px;
+      }
+      @media screen and (min-width: 1280px) {
+         top: 229px;
+      }
    }
 }
 .prod-card__text {
@@ -153,13 +214,16 @@
       margin-bottom: 40px;
       @include font(14px, 1.77, 0.04em, 700);
    }
+   @media screen and (min-width: 1280px) {
+      margin-bottom: 62px;
+      @include font(16px, 1.75, 0.04em, 700);
+   }
 }
 .prod-is-hidden {
    @media screen and (min-width: 768px) {
       display: none;
    }
 }
-
 .prod-card__button {
    cursor: pointer;
    border: 0;
